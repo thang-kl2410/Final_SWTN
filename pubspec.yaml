@@ -1,4 +1,4 @@
-name: fake_messenger
+name: final_software_technology
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -35,6 +35,13 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  cloud_firestore: ^4.9.3
+  firebase_core: ^2.17.0
+  firebase_auth: ^4.10.1
+  firebase_storage: ^11.2.8
+  image_picker: ^1.0.4
+  video_player: ^2.7.2
+  permission_handler: ^11.0.1
 
 dev_dependencies:
   flutter_test:
@@ -46,45 +53,43 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  cached_network_image: ^3.3.0
+  get: ^4.6.6
+  shared_preferences: ^2.2.1
+  google_sign_in: ^6.1.5
+  flutter_facebook_auth: ^6.0.2
+  gallery_media_picker: ^0.1.0
+  pointycastle: ^3.7.3
+  flutter_keyboard_visibility: ^5.4.1
+  camera: ^0.10.5+5
+  camera_android: ^0.10.8+13
+  permission_handler: ^11.0.1
+  google_fonts: ^6.1.0
+  intl: ^0.18.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/image/
+    - assets/language/
+    - assets/animationFile/
+    - assets/image/logo_login.jpg
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
+  fonts:
+    - family: NotoSerif
+      fonts:
+        - asset: assets/font/LatoRegular.ttf
+          weight: 400
+        - asset: assets/font/LatoMedium.ttf
+          weight: 500
+        - asset: assets/font/LatoBold.ttf
+          weight: 700
+        - asset: assets/font/Lato_Semibold.ttf
+          weight: 900
 
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
 
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
